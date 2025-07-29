@@ -4,6 +4,7 @@ import ResetDesign from "./pages/resetdesign";
 import SignUpPage from "./pages/signup";
 import SpinnerWheel from "@/components/SpinnerWheel";
 import TaskDetails from './../components/TaskDetails';
+import ErrorPage from "@/components/ErrorPage";
 
 export default function Home() {
   return (
@@ -13,7 +14,8 @@ export default function Home() {
      {/* <ResetDesign/> */}
      {/* <TaskCard/> */}
      {/* <SpinnerWheel/> */}
-     <TaskDetails/>
+     {/* <TaskDetails/> */}
+     <ErrorPage/>
    </div>
   );
 }
