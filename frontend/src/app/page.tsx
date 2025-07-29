@@ -1,10 +1,11 @@
-import Image from "next/image";
 import LoginPage from "./pages/login";
+import SignUpPage from "./pages/signup";
 
 export default function Home() {
   return (
    <div>
-     <LoginPage/>
+     {/* <LoginPage/> */}
+     <SignUpPage/>
    </div>
   );
 }
