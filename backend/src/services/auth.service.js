@@ -1,6 +1,7 @@
-const prisma = require('../config/db.config');
+const mongoose = require('../config/db.config');
 const bcrypt = require('bcrypt');
 const generateToken = require('../utils/generateToken');
+const User = require('../models/user.model');
 
 exports.registerUser = async (email, password) => {
   // const existingUser = await prisma.user.findUnique({ where: { email } });
@@ -26,6 +27,7 @@ exports.registerUser = async (email, password) => {
 exports.loginUser = async (email, password) => {
   // const user = await prisma.user.findUnique({ where: { email } });
   const user = await User.findOne({ email });
+  console.log("🚀 ~ user:", user)
   if (!user) throw new Error('Invalid credentials');
 
   const isMatch = await bcrypt.compare(password, user.password);
