@@ -5,8 +5,8 @@ import SignUpPage from "./pages/signup";
 import SpinnerWheel from "@/components/SpinnerWheel";
 import TaskDetails from './../components/TaskDetails';
 import ErrorPage from "@/components/ErrorPage";
-import CongratulationModal from "@/components/CongratulationModal";
-import ConfirmDeleteModal from "@/components/ConfirmDeleteModal";
+import CongratulationModal from "@/components/modals/CongratulationModal";
+import ConfirmDeleteModal from "@/components/modals/ConfirmDeleteModal";
 
 export default function Home() {
   return (
@@ -19,7 +19,7 @@ export default function Home() {
      {/* <TaskDetails/> */}
      {/* <ErrorPage/> */}
      {/* <CongratulationModal/> */}
-     <ConfirmDeleteModal/>
+     {/* <ConfirmDeleteModal/> */}
    </div>
   );
 }
