@@ -5,6 +5,7 @@ import SignUpPage from "./pages/signup";
 import SpinnerWheel from "@/components/SpinnerWheel";
 import TaskDetails from './../components/TaskDetails';
 import ErrorPage from "@/components/ErrorPage";
+import CongratulationModal from "@/components/CongratulationModal";
 
 export default function Home() {
   return (
@@ -15,7 +16,8 @@ export default function Home() {
      {/* <TaskCard/> */}
      {/* <SpinnerWheel/> */}
      {/* <TaskDetails/> */}
-     <ErrorPage/>
+     {/* <ErrorPage/> */}
+     <CongratulationModal/>
    </div>
   );
 }
